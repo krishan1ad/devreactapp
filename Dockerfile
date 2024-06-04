@@ -10,7 +10,7 @@ COPY package*.json ./
 RUN npm install
 
 # Copy the application source code
-COPY ./build .
+COPY . .
 
 # Stage 2: Create the production image
 FROM node:18.16.1-alpine
